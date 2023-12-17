@@ -1,0 +1,184 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>PVIMS.API</RootNamespace>
+    <UserSecretsId>3b9bc950-c2b8-4c39-a7c0-4d1f1a58718e</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>PVIMS.API.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Application\NewFolder\**" />
+    <Content Remove="Application\NewFolder\**" />
+    <EmbeddedResource Remove="Application\NewFolder\**" />
+    <None Remove="Application\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\files\20230411031928.pdf" />
+    <None Include="wwwroot\assets\files\20230411032257.pdf" />
+    <None Include="wwwroot\assets\files\20230411032343.pdf" />
+    <None Include="wwwroot\assets\files\20230411033019.pdf" />
+    <None Include="wwwroot\assets\files\20230411033202.pdf" />
+    <None Include="wwwroot\assets\files\20230411035148.pdf" />
+    <None Include="wwwroot\assets\files\20230411035711.pdf" />
+    <None Include="wwwroot\assets\files\20230411035938.pdf" />
+    <None Include="wwwroot\assets\files\20230411035955.pdf" />
+    <None Include="wwwroot\assets\files\20230411040458.pdf" />
+    <None Include="wwwroot\assets\files\20230411040516.pdf" />
+    <None Include="wwwroot\assets\files\20230411040624.pdf" />
+    <None Include="wwwroot\assets\files\20230411040951.pdf" />
+    <None Include="wwwroot\assets\files\20230411041013.pdf" />
+    <None Include="wwwroot\assets\files\20230411041047.pdf" />
+    <None Include="wwwroot\assets\files\20230411041207.pdf" />
+    <None Include="wwwroot\assets\files\20230411041323.pdf" />
+    <None Include="wwwroot\assets\files\20230411041439.pdf" />
+    <None Include="wwwroot\assets\files\20230411041443.pdf" />
+    <None Include="wwwroot\assets\files\20230411041646.pdf" />
+    <None Include="wwwroot\assets\files\20230411042020.pdf" />
+    <None Include="wwwroot\assets\files\20230411042107.pdf" />
+    <None Include="wwwroot\assets\files\20230411042215.pdf" />
+    <None Include="wwwroot\assets\files\20230411042238.pdf" />
+    <None Include="wwwroot\assets\files\20230411042246.pdf" />
+    <None Include="wwwroot\assets\files\20230411042303.pdf" />
+    <None Include="wwwroot\assets\files\20230411042401.pdf" />
+    <None Include="wwwroot\assets\files\20230411042408.pdf" />
+    <None Include="wwwroot\assets\files\20230411060205.pdf" />
+    <None Include="wwwroot\assets\files\20230411060243.pdf" />
+    <None Include="wwwroot\assets\files\20230411060246.pdf" />
+    <None Include="wwwroot\assets\files\20230411061205.pdf" />
+    <None Include="wwwroot\assets\files\20230411061210.pdf" />
+    <None Include="wwwroot\assets\files\20230411061449.pdf" />
+    <None Include="wwwroot\assets\files\20230411061549.pdf" />
+    <None Include="wwwroot\assets\files\20230412010005.pdf" />
+    <None Include="wwwroot\assets\files\20230412010318.pdf" />
+    <None Include="wwwroot\assets\files\20230412010352.pdf" />
+    <None Include="wwwroot\assets\files\20230412010419.pdf" />
+    <None Include="wwwroot\assets\files\20230412010441.pdf" />
+    <None Include="wwwroot\assets\files\20230412010444.pdf" />
+    <None Include="wwwroot\assets\files\20230412010518.pdf" />
+    <None Include="wwwroot\assets\files\20230412010614.pdf" />
+    <None Include="wwwroot\assets\files\20230412010646.pdf" />
+    <None Include="wwwroot\assets\files\20230412010717.pdf" />
+    <None Include="wwwroot\assets\files\20230412012042.pdf" />
+    <None Include="wwwroot\assets\files\20230412012839.pdf" />
+    <None Include="wwwroot\assets\files\20230412013105.pdf" />
+    <None Include="wwwroot\assets\files\20230412021351.pdf" />
+    <None Include="wwwroot\assets\files\20230412022610.pdf" />
+    <None Include="wwwroot\assets\files\20230412023808.pdf" />
+    <None Include="wwwroot\assets\files\20230412025401.pdf" />
+    <None Include="wwwroot\assets\files\20230412030219.pdf" />
+    <None Include="wwwroot\assets\files\20230412030433.pdf" />
+    <None Include="wwwroot\assets\files\20230412030836.pdf" />
+    <None Include="wwwroot\assets\files\20230412030904.pdf" />
+    <None Include="wwwroot\assets\files\20230412122912.pdf" />
+    <None Include="wwwroot\assets\files\20230412122937.pdf" />
+    <None Include="wwwroot\assets\files\20230412122955.pdf" />
+    <None Include="wwwroot\assets\files\20230412123016.pdf" />
+    <None Include="wwwroot\assets\files\20230412123021.pdf" />
+    <None Include="wwwroot\assets\files\20230412123104.pdf" />
+    <None Include="wwwroot\assets\files\20230412123110.pdf" />
+    <None Include="wwwroot\assets\files\20230412123132.pdf" />
+    <None Include="wwwroot\assets\files\20230412123233.pdf" />
+    <None Include="wwwroot\assets\files\20230412123306.pdf" />
+    <None Include="wwwroot\assets\files\20230412123335.pdf" />
+    <None Include="wwwroot\assets\files\20230412123601.pdf" />
+    <None Include="wwwroot\assets\files\20230412123734.pdf" />
+    <None Include="wwwroot\assets\files\20230412123818.pdf" />
+    <None Include="wwwroot\assets\files\20230412123821.pdf" />
+    <None Include="wwwroot\assets\files\20230412123845.pdf" />
+    <None Include="wwwroot\assets\files\20230412123848.pdf" />
+    <None Include="wwwroot\assets\files\20230412123921.pdf" />
+    <None Include="wwwroot\assets\files\20230412124119.pdf" />
+    <None Include="wwwroot\assets\files\20230412124331.pdf" />
+    <None Include="wwwroot\assets\files\20230412124908.pdf" />
+    <None Include="wwwroot\assets\files\20230412125037.pdf" />
+    <None Include="wwwroot\assets\files\20230412125108.pdf" />
+    <None Include="wwwroot\assets\files\20230412125159.pdf" />
+    <None Include="wwwroot\assets\files\20230412125205.pdf" />
+    <None Include="wwwroot\assets\files\20230412125313.pdf" />
+    <None Include="wwwroot\assets\files\20230412125319.pdf" />
+    <None Include="wwwroot\assets\files\20230412125352.pdf" />
+    <None Include="wwwroot\assets\files\20230412125412.pdf" />
+    <None Include="wwwroot\assets\files\20230412125434.pdf" />
+    <None Include="wwwroot\assets\files\20230412125450.pdf" />
+    <None Include="wwwroot\assets\files\20230412125832.pdf" />
+    <None Include="wwwroot\assets\files\20230412125847.pdf" />
+    <None Include="wwwroot\assets\fonts\bangla\Kalpurush.zip" />
+    <None Include="wwwroot\assets\fonts\bangla\SolaimanLipi.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.17.1" />
+    <PackageReference Include="DotNetZip" Version="1.16.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.1.2" />
+    <PackageReference Include="LinqKit.Core" Version="1.2.2" />
+    <PackageReference Include="MailKit" Version="3.3.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Json" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Xml" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Polly" Version="7.2.3" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\building\EventBus\EventBusRabbitMQ\EventBusRabbitMQ.csproj" />
+    <ProjectReference Include="..\..\building\EventBus\EventBus\EventBus.csproj" />
+    <ProjectReference Include="..\..\building\EventBus\IntegrationEventLogEF\IntegrationEventLogEF.csproj" />
+    <ProjectReference Include="..\..\WebHost.Customisation\WebHost.Customisation.csproj" />
+    <ProjectReference Include="..\PViMS.Infrastructure\PViMS.Infrastructure.csproj" />
+    <ProjectReference Include="..\PVIMS.Service\PVIMS.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\Lib\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="PVIMS.API.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="StaticFiles\SIAPS_USAID_Small.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

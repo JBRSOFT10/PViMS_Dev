@@ -1,0 +1,59 @@
+<div fxLayout="row wrap" [@animate]="{ value: '*', params: { y: '50px', delay: '600ms' } }">
+  <div fxFlex="50" fxFlex.gt-xs="50" fxFlex.xs="100">
+    <mat-card class="p-12 mat-elevation-z2 rounded" style="height: 150px;">
+      <mat-card-content>
+        <div class="p-12 rounded default-light-bg">
+          <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="5.5%" fxLayoutAlign="start">
+            <div fxFlex="100" class="pr-1 p-12">
+              <mat-label>{{'Please select a dashboard' | translate}}...</mat-label>
+            </div>
+            <div fxFlex="100" class="pr-1">
+              <mat-chip-list #chipList>
+                <mat-chip color="accent" [selected]="viewModel?.selectedDashboard?.id == dashboard.id" (click)="selectDashboard(dashboard)" style="cursor: pointer;" *ngFor="let dashboard of viewModel.dashboards"> 
+                  {{ dashboard.name }}
+                </mat-chip>
+              </mat-chip-list>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<div fxLayout="row wrap" [@animate]="{ value: '*', params: { y: '50px', delay: '600ms' } }">
+  <div fxFlex.gt-xs="50" fxFlex.xs="100" *ngFor="let chart of viewModel.charts">
+    <mat-card class="p-12 mat-elevation-z2 rounded" *ngIf="chart.chart.type == 'bar' || chart.chart.type == 'line'">
+      <mat-card-title class="text-center">
+        <div class="card-title-text light-gray p-12">
+          {{ chart.title.text | translate}}
+        </div>
+      </mat-card-title>              
+      <mat-card-content  style="height: 360px">
+        <apx-chart
+          [series]="chart.axisSeries"
+          [chart]="chart.chart"
+          [dataLabels]="chart.dataLabels"
+          [legend]="chart.legend"
+          [xaxis]="chart.xAxis"
+          [colors]="chart.colors"
+        ></apx-chart>        
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="p-12 mat-elevation-z2 rounded" *ngIf="chart.chart.type == 'pie'">
+      <mat-card-title class="text-center">
+        <div class="card-title-text light-gray p-12">
+          {{ chart.title.text | translate}}
+        </div>
+      </mat-card-title>              
+      <mat-card-content  style="height: 360px">
+        <apx-chart
+          [series]="chart.nonAxisSeries"
+          [chart]="chart.chart"
+          [labels]="chart.labels"
+          [colors]="chart.colors"
+        ></apx-chart>        
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="height-100 landing">
+  <div class="top-bar">
+    <div fxFlex="25" class="left">
+      <img [src]="dgdaLogo" alt="dgda logo">
+      <h1 class="title center font-weight-bold">{{'Pharmacovigilance Reporting System' | translate}}</h1>
+    </div>
+    <div fxFlex="75" class="right">
+      <img [src]="pvimsLogo" alt="pvims logo">
+    </div>
+  </div>
+  <div class="middle" fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="0.1%" fxLayoutAlign="center center">
+    <div fxFlex.gt-sm="49" fxFlex.lt-md="100" class="container m-2">
+      <mat-card class="yellow-200 text-center" style="min-height: 60px;" (click)="navigateToSpontaneous()">
+        <mat-card-title>
+          <h2 class="title font-weight-bold">{{'SUSPECTED ADVERSE EVENT REPORTING FORM' | translate}} </h2>
+        </mat-card-title>
+        <mat-card-content>
+          <div class="pt-8 pb-16">
+            <p class="m-8">{{'Identities of reporter, patient, institution, and product trade name(s) will remain confidential' | translate}}</p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div fxFlex.gt-sm="49" fxFlex.lt-md="100" class="container m-2">
+      <mat-card class="grey-100 text-center" style="min-height: 60px;" (click)="navigateToLogin()">
+        <mat-card-title class="text-center">
+          <h2 class="title font-weight-bold">{{'DGDA Panel' | translate}}</h2>
+        </mat-card-title>
+        <mat-card-content>
+          <div class="pt-8 pb-16">
+            <p class="m-8">{{'Case Management, Line Reports, Dashboard' | translate}}</p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div fxFlex="100" class="text-center">
+      <button mat-button color="primary" (click)="openAboutPopUp()">{{'About PViMS' | translate}}</button>
+    </div>
+  </div>
+  <div class="footer">
+    <div fxFlex="20" fxLayoutAlign="center center" class="left">
+      <img [src]="usaidLogo" alt="USAID logo">
+    </div>
+    <div fxFlex="80" fxLayoutAlign="center center" class="right">
+      <p>
+        This portal is made possible by the generous support of the American people through the US Agency for International Development (USAID) contract no. 7200AA18C00074. The contents are the responsibility of the authors and do not necessarily reflect the views of USAID or the US Government.
+      </p>
+    </div>
+  </div>
+</div>

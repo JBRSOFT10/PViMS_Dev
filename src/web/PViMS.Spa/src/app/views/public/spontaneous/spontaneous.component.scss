@@ -1,0 +1,149 @@
+// Columns widths
+mat-column {
+  word-wrap: break-word !important;
+  white-space: unset !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.mat-column-actions {
+  flex: 0 0 15% !important;
+  width: 15% !important;
+}
+
+.mat-column-medication {
+  flex: 0 0 50% !important;
+  width: 50% !important;
+}
+
+.form-wrap {
+  margin: 5px;
+  height: 100%;
+  overflow: auto;
+}
+
+.example-radio-group {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.example-radio-button {
+  margin: 5px 16px;
+}
+
+.radio-button-label {
+  padding-left: 0 !important;
+}
+
+mat-step-header {
+  &:nth-of-type(1) {
+    .mat-step-icon-selected {
+      .mat-step-icon-content {
+        span.ng-star-inserted {
+          display: none;
+        }
+        &:after {
+          content: 'A';
+        }
+      }
+    }
+    .mat-step-icon-state-number {
+      .mat-step-icon-content {
+        span.ng-star-inserted {
+          display: none;
+        }
+        &:after {
+          content: 'A';
+        }
+      }
+    }
+  }
+  &:nth-of-type(2) {
+    .mat-step-icon-selected {
+      .mat-step-icon-content {
+        span.ng-star-inserted {
+          display: none;
+        }
+        &:after {
+          content: 'B';
+        }
+      }
+    }
+    .mat-step-icon-state-number {
+      .mat-step-icon-content {
+        span.ng-star-inserted {
+          display: none;
+        }
+        &:after {
+          content: 'B';
+        }
+      }
+    }
+  }
+  &:nth-of-type(3) {
+    .mat-step-icon-selected {
+      .mat-step-icon-content {
+        span.ng-star-inserted {
+          display: none;
+        }
+        &:after {
+          content: 'C';
+        }
+      }
+    }
+    .mat-step-icon-state-number {
+      .mat-step-icon-content {
+        span.ng-star-inserted {
+          display: none;
+        }
+        &:after {
+          content: 'C';
+        }
+      }
+    }
+  }
+  &:nth-of-type(4) {
+    .mat-step-icon-selected {
+      .mat-step-icon-content {
+        span.ng-star-inserted {
+          display: none;
+        }
+        &:after {
+          content: 'D';
+        }
+      }
+    }
+    .mat-step-icon-state-number {
+      .mat-step-icon-content {
+        span.ng-star-inserted {
+          display: none;
+        }
+        &:after {
+          content: 'D';
+        }
+      }
+    }
+  }
+}
+
+#cdk-step-content-0-0 {
+  .yellow-form {
+    div.form-field {
+      &:nth-child(1),
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
+
+.mat-form-field-required-marker {
+  color: red;
+}

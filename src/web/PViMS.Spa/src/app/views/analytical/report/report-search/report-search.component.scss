@@ -1,0 +1,99 @@
+.table-container {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    .mat-table {
+        min-width: 100%;
+        // max-width: 100%;
+        margin-bottom: 1rem;
+        display: table;
+        border-collapse: collapse;
+        margin: 0px;
+    }
+    .mat-row,
+    .mat-header-row {
+        display: flex;
+    }
+    .mat-cell,
+    .mat-header-cell {
+        word-wrap: break-word;
+        padding: 0px 10px;
+        line-break: unset;
+        // white-space: nowrap;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+
+    .mat-column-id {
+        flex: 0 0 5% !important;
+        width: 5% !important;
+    }
+    .mat-column-identifier {
+        flex: 0 0 10% !important;
+        width: 10% !important;
+    }
+    .mat-column-patient {
+        flex: 0 0 15% !important;
+        width: 15% !important;
+    }
+    .mat-column-medication-summary {
+        flex: 0 0 10% !important;
+        width: 10% !important;
+    }
+    .mat-column-actions {
+        flex: 0 0 5% !important;
+        width: 5% !important;
+    }
+
+    .mat-column-slno {
+        flex: 0 0 1% !important;
+    }
+    .mat-column-patientIdentifier {
+        flex: 0 0 9% !important;
+    }
+    // .mat-column-submissionDate {
+    //     flex: 0 0 3% !important;
+    // }
+    // .mat-column-age {
+    //     flex: 0 0 3% !important;
+    // }
+    // .mat-column-gender {
+    //     flex: 0 0 3% !important;
+    // }
+    // .mat-column-genericNameWithStrength {
+    //     flex: 0 0 7% !important;
+    // }
+    // .mat-column-dosageFrom {
+    //     flex: 0 0 5% !important;
+    // }
+    // .mat-column-frequencyDailyDose {
+    //     flex: 0 0 5% !important;
+    // }
+    // .mat-column-indication {
+    //     flex: 0 0 5% !important;
+    // }
+    // .mat-column-medicationstartdate {
+    //     flex: 0 0 5% !important;
+    // }
+    // .mat-column-eventstartdate {
+    //     flex: 0 0 5% !important;
+    // }
+    // .mat-column-describeeventincludingrelevanttestsandlaboratoryresults {
+    //     flex: 0 0 5% !important;
+    // }
+    .mat-column-adrmStatus {
+        // flex: 0 0 10% !important;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+    .mat-column-opinionTsc {
+        // flex: 0 0 10% !important;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+    .mat-column-opinionAdrac {
+        // flex: 0 0 10% !important;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+}

@@ -1,0 +1,57 @@
+mat-card:hover {
+  cursor: pointer;
+}
+
+.landing {
+  position: relative;
+
+  .top-bar {
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(174, 165, 165);
+    padding: 0 15px;
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      h1 {
+        color: red;
+      }
+
+      img {
+        width: 100px;
+        object-fit: contain;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      img {
+        width: 60px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .middle {
+    min-height: 60vh;
+  }
+
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+
+    .right {
+      padding-right: 10px;
+
+      p {
+        color: rgb(174, 165, 165);
+      }
+    }
+  }
+}

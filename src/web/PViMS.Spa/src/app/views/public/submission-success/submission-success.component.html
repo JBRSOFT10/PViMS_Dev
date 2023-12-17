@@ -1,0 +1,15 @@
+<div class="height-100" fxLayoutAlign="center center" style="overflow-y: auto;">
+    <mat-card class="success-card">
+        <mat-card-title class="text-center">Your data has been submitted successfully</mat-card-title>
+        <mat-card-content class="success-card-content text-center">
+            <span>Your Unique Submission ID: {{serialId}}</span>
+            <br />
+            <span>Submission date: {{submissionDate}}</span>
+        </mat-card-content>
+        <mat-divider inset></mat-divider>
+        <mat-card-actions class="text-center">
+            <button mat-raised-button (click)="goBack()">Back</button>
+            <button mat-raised-button color="primary" (click)="downloadSummary()">Download</button>
+        </mat-card-actions>
+      </mat-card>
+</div>
